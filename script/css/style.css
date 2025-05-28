@@ -1,0 +1,156 @@
+*{
+  font-family: sans-serif, serif;
+  box-sizing: border-box;
+}
+html, body{
+margin:0;
+}
+header{
+  display:flex;
+  padding:20px;
+  background:#fff;
+  position:fixed;
+  width: 100%;
+  z-index: 1;
+ border-bottom: 2px solid #BBBBBB;
+}
+header button{
+  color:#6A7D00;
+  background:none;
+  border:none;
+  font-size: 28px;
+  font-weight: 900;
+  margin:20px 20px 20px 20px;
+}
+header h1 span {
+  font-size: 14px;
+}
+header button:hover{
+  border-radius: 50%;
+  background:#7985FF;
+}
+header hr{
+  margin:0;
+  padding:0;
+}
+header h1{
+  font-size: 18px;
+  font-weight: 500;
+  color:#121212;
+  margin-left: 20px;
+  font-family: sans-serif;
+}
+.menu_controls {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  background: #fff;
+  position: fixed;
+  z-index: 1;
+  overflow-y: auto;
+}
+nav.menu_controls img{
+  margin:20px 5px 20px 30px;
+}
+nav{
+  display:inline-flex;
+}
+nav h2{
+  margin-top:30px;
+  margin-right: 30px;
+  font-weight: 400;
+  transform: scaleY(1.2);
+  font-size: 14px;
+}
+nav.menu_controls div.c{
+  display:flex;
+}
+nav.menu_controls div.c button{
+  background:none;
+  border:none;
+  font-size: 18px;
+  margin:20px 30px 20px 30px;
+}
+nav.menu_controls div.c button:hover{
+  background:#7985FF;
+  border-radius: 50%;
+}
+nav.menu_controls div.d p{
+  font-weight: 900;
+}
+nav.menu_controls div.d p a{
+  margin: 0 0 0 45px;
+  color:#6A7D00;
+  font-weight: 500;
+ text-decoration:none;
+}
+footer p#neo{
+  font-weight: 400;
+  font-size: 12px;
+}
+section.a{
+padding-top: 0;
+display:block;
+}
+section.b{
+  padding-top: 100px;
+}
+section.a p{
+  margin: 30px 0 0 20px;
+  font-size: 12px;
+}
+div.table{
+display:flex;
+border-top:1px solid #000;
+border-bottom:1px solid #000;
+}
+div.table p{
+  text-align: left;
+  font-size: 18px;
+  color:#0C3270;
+  font-weight: 900;
+}
+div.table div.left{
+  width:50%;
+}
+div.table div.left p.date{
+  font-size: 14px;
+  margin-top:0;
+  color:#9D9D9D;
+  font-weight: 600;
+}
+div.table div.right{
+  width:50%;
+}
+div.table div.right img{
+  margin:30px 10px 20px 60px;
+}
+footer{
+  background:#243312;
+  position: relative;
+  padding:5px;
+}
+footer img{
+  margin:50px 0 30px 20px;
+}
+footer p{
+  color:#fff;
+  font-weight: 900;
+  margin-left:20px;
+  font-size: 15px;
+  line-height: 12px;
+  font-family: sans-serif, serif;
+}
+footer p a{
+ font-size: 12px;
+ padding:0;
+ line-height: 2px;
+text-decoration:none; 
+font-weight: 300;
+font-family:sans-serif, serif;
+  color:#C5D30A;
+margin-left:20px;
+}
+
