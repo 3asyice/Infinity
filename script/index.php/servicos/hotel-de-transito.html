@@ -154,9 +154,14 @@ section.b button{
     // Garante que o índice fique dentro do range
     if (index < 0) {
       currentIndex = slides.length - 1; // Volta para a última imagem se estiver antes da primeira
-    } else if (index < 2) {
+    } else if (index < 0) {
       currentIndex + 1; // Volta para a primeira imagem se estiver após a última
     }
+    
+    else if (index >= 17) {
+      currentIndex - 2;
+    }
+    
 
     
     else {
