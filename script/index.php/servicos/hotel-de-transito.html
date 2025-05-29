@@ -89,40 +89,119 @@ section.b button{
 <hr>
 <p>
 <center>
+<style>
+#slider198 {
+    display: flex;
+    overflow: hidden;
+    width: 100%; /* largura do carrossel */
+    height: 250px; /* altura do carrossel */
+}
+
+.slide {
+    min-width: 95%; /* Altere para 100% */
+    background: red;
+    transition: transform 0.5s ease;
+}
+
+.carousel-controls {
+    text-align: center;
+    margin-top: 0;
+    
+}
+</style>
+<center>
+<ul type="none" id="slider198" class="djslider-in">
+  <li class="slide">
+    <img width="95%" class="dj-image" src="../../../assets/img/ht-img/1_Entrada.jpg" alt="1_Entrada.jpg" />
+  </li>
+  <li class="slide">
+    <img width="95%" class="dj-image" src="../../../assets/img/ht-img/2_portaria.jpg" alt="2_portaria.jpg" />
+  </li>
+  <li class="slide">
+    <img width="95%" class="dj-image" src="../../../assets/img/ht-img/4_sala_de_tv.png" alt="4_sala_de_tv.png" />
+  </li>
+  <li class="slide">
+    <img width="95%" class="dj-image" src="../../../assets/img/ht-img/5_cantinho_do_sofa.png" alt="5_cantinho_do_sofa.png" />
+  </li>
+  <li class="slide">
+    <img width="95%" class="dj-image" src="../../../assets/img/ht-img/6_refeitorio.png" alt="6_refeitorio.png" />
+  </li>
+  <li class="slide">
+    <img width="95%" class="dj-image" src="../../../assets/img/ht-img/7suite_.jpg" alt="7suite_.jpg" />
+  </li>
+  <li class="slide">
+    <img width="95%" class="dj-image" src="../../../assets/img/ht-img/pergolado-com-bancos.png" alt="pergolado-com-bancos.png" />
+  </li>
+  <li class="slide">
+    <img width="95%" class="dj-image" src="../../../assets/img/ht-img/htsmm.png" alt="htsmm.png" />
+  </li>
+  <li class="slide">
+    <img width="95%" class="dj-image" src="../../../assets/img/ht-img/valores.jpeg" alt="valores.jpeg" />
+  </li>
+</ul>
+</center>
+<div class="carousel-controls">
+  <button id="prev">Anterior</button>
+  <button id="next">Próximo</button>
+</div>
+<script>
+  const slides = document.querySelectorAll('.slide');
+  const prevButton = document.getElementById('prev');
+  const nextButton = document.getElementById('next');
+  let currentIndex = 0;
+  
+  function showSlide(index) {
+    // Garante que o índice fique dentro do range
+    if (index < 0) {
+      currentIndex = slides.length - 1; // Volta para a última imagem se estiver antes da primeira
+    } else if (index < 2) {
+      currentIndex + 1; // Volta para a primeira imagem se estiver após a última
+    }
+
+    
+    else {
+      currentIndex = index; // Caso contrário, usa o índice fornecido
+    }
+    
+    slides.forEach((slide, i) => {
+      slide.style.transform = `translateX(${(i - currentIndex) * 100}%)`; // Ajusta a posição do slide
+    });
+  }
+  
+  prevButton.addEventListener('click', () => {
+    showSlide(currentIndex - 2); // Mostra o slide anterior
+  });
+  
+  nextButton.addEventListener('click', () => {
+    showSlide(currentIndex + 2); // Mostra o próximo slide
+  });
+  
+  // Mostra o slide inicial
+  showSlide(currentIndex);
+</script>
 <img width="95%" src="../../../assets/img/outro/ht.webp" alt="htsm">
 <br>
 <p>Hotel de Trânsito de Santa Maria (HTSM)</p>
 </center>
 <p>
-Ao ser nomeado para o cargo de Comandante da Base Administrativa da Guarnição de Santa Maria, o Coronel de Cavalaria DÉLCIO DE DEUS <strong>GULART</strong> estava servindo no Comando da 3ª Região Militar, sediado em Porto Alegre-RS.
+O Hotel de Trânsito de Santa Maria é um meio de hospedagem do Exército Brasileiro.
 </p>
 <p>
-Foi promovido ao posto atual em 31 de agosto de 2023.
+O HTSM possui 24 UH, todas com banheiro privativo, sendo:
 </p>
 <p>
-Nascido em 27 de abril de 1978, na cidade de Porto Alegre – RS, é filho do Coronel de Cavalaria Glacy Cezar Gulart e da Servidora Civil aposentada do Exército Ana Anilce de Deus Gulart.
+- 02 (duas) suítes, compostas por uma cama de casal e uma cama auxiliar, comportando até 3 pessoas.
 </p>
 <p>
-Incorporou às fileiras do Exército em 11 de fevereiro de 1995, na Escola Preparatória de Cadetes do Exército.
+- 13 (treze) suítes, compostas por uma cama de casal e uma cama de solteiro (com cama auxiliar), comportando até 4 pessoas.
 </p>
 <p>
-Em 27 de novembro de 1999, foi declarado Aspirante-a-Oficial da arma de Cavalaria na Academia Militar das Agulhas Negras (AMAN), sendo classificado no 6º Esquadrão de Cavalaria Mecanizado, sediado nesta cidade.
+- 7 (sete) apartamentos, compostos por duas camas de solteiro (com cama auxiliar), comportando até 4 pessoas.
 </p>
 <p>
-Realizou o curso de Instrutor de Educação Física em 2003, de Aperfeiçoamento de Oficiais em 2007, e de Gestão e Assessoramento de Estado-Maior em 2019. É graduado em Direito, pós-graduado em Direito em Administração Pública, em Direito Militar, em Gestão da Administração Pública e mestre em Ciências Militares.
-</p>
-<p>
-Foi instrutor da Escola de Educação Física das Forças Armadas do Paraguai em 2012, Subcomandante da Base Administração e Apoio da 3ª Região Militar em 2019, Oficial de Operações do 3º Grupamento Logístico em 2020 e chefe do Posto de Recrutamento e Mobilização 01/003 (Niterói-RJ) nos anos de 2021 e 2022.
-</p>
-<p>
-Foi condecorado com a medalha Olavo Bilac, de honra da Escola de Educação Física das Forças Armadas do Paraguai, Marechal Trompowsky, do Mérito Blindado, Corpo de Tropa de Prata, Militar de Prata e do Pacificador.
-</p>
-<p>
-É casado com a senhora Janine e possui um filho: Arthur.
+- 2 (dois) apartamentos, compostos por três camas de solteiro, comportando até 3 pessoas.
 </p>
 </article>
-<button onclick="location.href='../../script/index.php/comandante-anterior.html'">Ver comandante anterior</button>
-
 </section>
 <footer>
 <img width="60px" height="80px" src="../../../assets/img/logo/symbol.png" alt="simbolo da bdmgusm">
