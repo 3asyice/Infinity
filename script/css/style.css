@@ -107,6 +107,7 @@ section.a p{
 }
 div.table{
 display:flex;
+cursor:pointer;
 border-top:1px solid #000;
 border-bottom:1px solid #000;
 }
@@ -158,4 +159,6 @@ font-family:sans-serif, serif;
   color:#C5D30A;
 margin-left:20px;
 }
-
+ul p a{
+cursor:pointer;
+}
